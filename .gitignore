@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Checkpoints and generated outputs
+checkpoints/
+outputs/
+logs/
+wandb/
+
+# Secrets
+.env
+*.key
+*.token
+hf_token
+.huggingface/
+
+# Scratch experiment artefacts (never committed)
+experiments/
+experiments_*/
+*.patch
+epoch_*/
+judge_*.json
+run_log_*.txt
+PLAN.md
+paper.pdf
+.cache/
+
+# LaTeX build artefacts (the compiled report PDF is committed)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+report/report.pdf
