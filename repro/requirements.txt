@@ -1,0 +1,5 @@
+# Additional dependencies for the offline reproduction study.
+# Install together with the upstream requirements:
+#   pip install -r requirements.txt -r repro/requirements.txt
+pytest>=8.0
+matplotlib>=3.8
