@@ -194,7 +194,7 @@ No secrets, API keys, `.env` files or tokens are committed. `.gitignore` exclude
 |---|---|
 | Brief report (8 pages, <= 10) | `report/FTEC5660_Reproducibility_Report_JIANG_Jiawei_1155271183.pdf` — typeset with LaTeX in the style of the assignment brief |
 | GitHub link | `https://github.com/Veiv-cuhk/FTEC5660-ToolTree-Reproducibility` (public, small reviewable commits, no secrets; clone URL in the Install section) |
-| Presentation link (9:13; limit 15) | Recorded Zoom presentation, presenter on camera, hosted as a public Release asset in this repository (no login required). Release page: `https://github.com/Veiv-cuhk/FTEC5660-ToolTree-Reproducibility/releases/tag/v1.0`. Direct MP4: `https://github.com/Veiv-cuhk/FTEC5660-ToolTree-Reproducibility/releases/download/v1.0/FTEC5660_Presentation_JIANG_Jiawei_1155271183.mp4` |
+| Presentation link (9:13; limit 15) | Recorded Zoom presentation, presenter on camera, **plays directly in the browser** with no login required: `https://ftec5660-presentation.app.workbuddy.host/?sharecode=7ADPFNYBAM`. A downloadable backup is attached to [Release v1.0](https://github.com/Veiv-cuhk/FTEC5660-ToolTree-Reproducibility/releases/tag/v1.0). |
 
 The report can be rebuilt from its LaTeX source with `bash report/build.sh` from
 the repository root (needs `pdflatex`; TeX Live 2024 was used, run twice). LaTeX
