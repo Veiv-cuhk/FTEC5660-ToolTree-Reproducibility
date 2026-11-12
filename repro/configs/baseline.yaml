@@ -1,0 +1,27 @@
+# Reproduction condition: upstream defaults.
+# tau_pre / tau_post / exploration_constant / max_rollouts are taken verbatim
+# from the meta block of the repo's own published logged run
+# (docs/static/demo_data.js: seed=42, tau_pre=0.3, tau_post=0.4,
+#  exploration_constant=1.4, max_rollouts=40).
+# max_depth=4 bounds the synthetic search trees (gold chains are 2-3 steps).
+# top_k=5 is the upstream MCTSConfig default (Appendix B.4).
+#
+# MEASUREMENT PROTOCOL (applied IDENTICALLY to both conditions, therefore NOT
+# the experimental modification): early_stop_patience is raised from the
+# shipped default of 10 to 100, i.e. early stopping is effectively disabled.
+# Reason: with patience=10 both arms stop after ~12 rollouts, before the
+# pruning difference can accumulate, which masks the effect under study.
+# See the debug diary in the report; the shipped-default protocol is rerun
+# as a sensitivity check with `--early-stop-patience 10`.
+benchmark: gta
+tool_execution: mock
+seed: 42
+mcts:
+  exploration_constant: 1.4
+  max_rollouts: 40
+  tau_pre: 0.3
+  tau_post: 0.4
+  early_stop_delta: 0.001
+  early_stop_patience: 100
+  max_depth: 4
+  top_k: 5
