@@ -1,0 +1,28 @@
+# THE MODIFICATION (one isolated, measurable change).
+#
+# Only `mcts.tau_post` differs from repro/configs/baseline.yaml:
+#   baseline  tau_post = 0.4  -> post-evaluation pruning ACTIVE
+#   ablation  tau_post = 0.0  -> post-evaluation pruning DISABLED
+#                               (r_post >= 0 always, so the condition
+#                                r_post < tau_post can never fire)
+#
+# This removes the post-execution half of "bidirectional pruning" while
+# leaving pre-evaluation pruning, the MCTS loop, UCT selection, early
+# stopping, tool execution, the judge, the planner, the tasks and the seeds
+# untouched. It is therefore a clean ablation of one mechanism.
+#
+# Note: no upstream source file is edited. The modification is a config value.
+# early_stop_patience=100 is the same MEASUREMENT PROTOCOL setting as in
+# baseline.yaml -- it is held constant across the two conditions.
+benchmark: gta
+tool_execution: mock
+seed: 42
+mcts:
+  exploration_constant: 1.4
+  max_rollouts: 40
+  tau_pre: 0.3
+  tau_post: 0.0
+  early_stop_delta: 0.001
+  early_stop_patience: 100
+  max_depth: 4
+  top_k: 5
