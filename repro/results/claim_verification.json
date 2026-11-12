@@ -1,0 +1,68 @@
+{
+  "note": "'reported' values are the numeric assertions / descriptions in the upstream repository; 'measured' values are produced by this script on this machine. No upstream source file was modified.",
+  "claims": [
+    {
+      "claim": "Upstream behavior test suite",
+      "source": "README.md ('Behavior test suite (32 tests)')",
+      "reported": {
+        "tests_passed": 32
+      },
+      "measured": {
+        "tests_passed": 32,
+        "exit_code": 0,
+        "summary": "32 passed in 1.33s"
+      },
+      "reproduced": true
+    },
+    {
+      "claim": "Exhausted search stops without re-visiting / re-backpropagating",
+      "source": "tests/test_release_fixes.py::test_exhausted_search_stops_without_revisit_backprop",
+      "reported": {
+        "post_eval_calls": 4,
+        "rollouts_used": 4,
+        "root_visit_count": 4,
+        "root_exhausted": true,
+        "best_q_history_len": 4
+      },
+      "measured": {
+        "post_eval_calls": 4,
+        "rollouts_used": 4,
+        "root_visit_count": 4,
+        "root_exhausted": true,
+        "best_q_history_len": 4
+      },
+      "reproduced": true
+    },
+    {
+      "claim": "A post-pruned branch is never rebuilt and re-judged",
+      "source": "tests/test_release_fixes.py::test_no_equivalent_candidate_rebuild_after_post_prune",
+      "reported": {
+        "dead_tool_post_judgments": "<= 2",
+        "nodes_with_duplicate_children": 0
+      },
+      "measured": {
+        "dead_tool_post_judgments": 2,
+        "nodes_with_duplicate_children": 0
+      },
+      "reproduced": true
+    },
+    {
+      "claim": "UCT selection follows Eq. 1 (Q + c*r_pre*sqrt(ln N / N_a))",
+      "source": "tests/test_tier1_fixes.py::test_eq1_formula_for_visited_children",
+      "reported": {
+        "uct_a": 1.1594,
+        "uct_b": 1.3664,
+        "uct_b_gt_uct_a": true,
+        "best_child": "b"
+      },
+      "measured": {
+        "uct_a": 1.1593,
+        "uct_b": 1.3662,
+        "uct_b_gt_uct_a": true,
+        "best_child": "b"
+      },
+      "reproduced": true
+    }
+  ],
+  "all_reproduced": true
+}

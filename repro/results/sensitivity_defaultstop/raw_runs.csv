@@ -1,0 +1,241 @@
+condition,seed,task_id,family,tau_pre,tau_post,early_stop_patience,plan_success,order_exact,tool_f1,plan_f1,gold_recall,plan_length,best_q,pre_eval_calls,post_eval_calls,planner_calls,rollouts_used,nodes_created,post_pruned_nodes,pre_pruned_log,topk_dropped_log,post_pruned_log,schema_gated_log,dedup_log,search_exhausted,early_stop,wall_ms,predicted_plan,gold_plan
+baseline,1,clean-00,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.911222,13,11,15,11,14,7,0,0,7,0,2,0,1,1.885,SQLQuery > Calculator,Calculator > SQLQuery
+baseline,1,clean-01,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.89099,13,11,15,11,14,7,0,0,7,0,2,0,1,1.684,SQLQuery > WebSearch,WebSearch > SQLQuery
+baseline,1,clean-02,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.894312,13,11,15,11,14,7,0,0,7,0,2,0,1,1.674,Calendar > WebSearch,WebSearch > Calendar
+baseline,1,clean-03,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.863937,13,12,15,12,14,8,0,0,8,0,2,0,1,2.119,OCR > Calculator,Calculator > OCR
+baseline,1,clean-04,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.891547,13,11,15,11,14,7,0,0,7,0,2,0,1,1.691,MapRoute > ImageCaption,MapRoute > ImageCaption
+baseline,1,clean-05,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.90149,13,11,15,11,14,7,0,0,7,0,2,0,1,1.64,WebSearch > Calendar,Calendar > WebSearch
+baseline,1,trap-00,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.486,OCR > SQLQuery > Calendar,OCR > SQLQuery
+baseline,1,trap-01,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.497,OCR > MapRoute > WeatherLookup,OCR > MapRoute
+baseline,1,trap-02,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.873908,17,11,20,11,18,3,0,0,3,0,3,0,1,2.099,Calculator > WeatherLookup,WeatherLookup > Calculator
+baseline,1,trap-03,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.843162,13,12,15,12,14,9,0,0,9,0,2,0,1,1.811,CurrencyConvert > MapRoute,CurrencyConvert > MapRoute
+baseline,1,trap-04,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.820107,13,11,15,11,14,7,0,0,7,0,2,0,1,1.684,OCR > SQLQuery,OCR > SQLQuery
+baseline,1,trap-05,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.87084,13,13,15,13,14,9,0,0,9,0,2,0,1,1.937,MapRoute > WeatherLookup,WeatherLookup > MapRoute
+baseline,1,noisy-00,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.87454,16,11,18,11,16,7,0,1,7,0,2,0,1,1.776,Calendar > ImageCaption,Calendar > ImageCaption
+baseline,1,noisy-01,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.837747,16,11,18,11,16,7,0,1,7,0,2,0,1,2.181,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+baseline,1,noisy-02,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.863023,16,11,18,11,16,7,0,1,7,0,2,0,1,1.769,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+baseline,1,noisy-03,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.911433,16,11,18,11,16,7,0,1,7,0,2,0,1,1.819,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+baseline,1,noisy-04,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.872236,16,11,18,11,16,7,0,1,7,0,2,0,1,1.744,ImageCaption > Calculator,ImageCaption > Calculator
+baseline,1,noisy-05,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.982144,16,12,18,12,16,8,0,1,8,0,2,0,1,1.865,ImageCaption > SQLQuery,SQLQuery > ImageCaption
+baseline,1,deep-00,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.915081,21,11,24,11,21,4,0,1,4,0,3,0,1,3.199,WebSearch > Calculator,Calculator > SQLQuery > WebSearch
+baseline,1,deep-01,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.849341,21,11,24,11,21,5,0,1,5,0,3,0,1,1.962,WebSearch > SQLQuery,WebSearch > SQLQuery > Calendar
+baseline,1,deep-02,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.867687,21,11,24,11,21,3,0,1,3,0,3,0,1,1.929,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+baseline,1,deep-03,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.893321,21,11,24,11,21,4,0,1,4,0,3,0,1,1.938,OCR > Translator,Translator > OCR > Calendar
+baseline,1,deep-04,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.872877,21,11,24,11,21,5,0,1,5,0,3,0,1,1.932,OCR > Calculator,OCR > Calculator > MapRoute
+baseline,1,deep-05,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.903868,21,11,24,11,21,5,0,1,5,0,3,0,1,2.512,Calendar > MapRoute,Calendar > MapRoute > OCR
+baseline,2,clean-00,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.895453,13,11,15,11,14,7,0,0,7,0,2,0,1,1.687,SQLQuery > Calculator,Calculator > SQLQuery
+baseline,2,clean-01,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.936052,13,11,15,11,14,7,0,0,7,0,2,0,1,1.67,SQLQuery > WebSearch,WebSearch > SQLQuery
+baseline,2,clean-02,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.888057,13,11,15,11,14,7,0,0,7,0,2,0,1,1.648,WebSearch > Calendar,WebSearch > Calendar
+baseline,2,clean-03,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.864952,13,11,15,11,14,7,0,0,7,0,2,0,1,1.643,Calculator > OCR,Calculator > OCR
+baseline,2,clean-04,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.88315,13,11,15,11,14,7,0,0,7,0,2,0,1,2.631,ImageCaption > MapRoute,MapRoute > ImageCaption
+baseline,2,clean-05,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.883273,13,13,15,13,14,9,0,0,9,0,2,0,1,2.008,Calendar > WebSearch,Calendar > WebSearch
+baseline,2,trap-00,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.920064,16,14,20,14,17,10,0,0,10,0,4,0,1,2.235,SQLQuery > OCR,OCR > SQLQuery
+baseline,2,trap-01,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.872254,16,14,20,14,17,10,0,0,10,0,4,0,1,2.191,MapRoute > OCR,OCR > MapRoute
+baseline,2,trap-02,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.804229,13,13,15,13,14,9,0,0,9,0,2,0,1,1.898,WeatherLookup > Calculator,WeatherLookup > Calculator
+baseline,2,trap-03,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,4.397,CurrencyConvert > MapRoute > WeatherLookup,CurrencyConvert > MapRoute
+baseline,2,trap-04,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.931388,16,14,20,14,17,10,0,0,10,0,4,0,1,2.262,SQLQuery > OCR,OCR > SQLQuery
+baseline,2,trap-05,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.711,WeatherLookup > MapRoute > Calculator,WeatherLookup > MapRoute
+baseline,2,noisy-00,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.834638,16,12,18,12,16,8,0,1,8,0,2,0,1,1.871,Calendar > ImageCaption,Calendar > ImageCaption
+baseline,2,noisy-01,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.836987,16,11,18,11,16,7,0,1,7,0,2,0,1,2.931,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+baseline,2,noisy-02,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.906693,16,11,18,11,14,7,3,0,7,0,2,0,1,1.789,SQLQuery > WeatherLookup,WeatherLookup > SQLQuery
+baseline,2,noisy-03,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.880735,16,11,18,11,16,7,0,1,7,0,2,0,1,1.76,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+baseline,2,noisy-04,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.895182,16,14,18,14,16,10,0,1,10,0,2,0,1,2.096,Calculator > ImageCaption,ImageCaption > Calculator
+baseline,2,noisy-05,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.817626,16,11,18,11,16,7,0,1,7,0,2,0,1,1.732,SQLQuery > ImageCaption,SQLQuery > ImageCaption
+baseline,2,deep-00,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.901741,21,14,24,14,21,6,0,1,6,0,3,0,1,3.256,WebSearch > Calculator,Calculator > SQLQuery > WebSearch
+baseline,2,deep-01,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.909747,21,11,24,11,21,5,0,1,5,0,3,0,1,1.969,SQLQuery > WebSearch,WebSearch > SQLQuery > Calendar
+baseline,2,deep-02,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.830481,21,11,24,11,21,5,0,1,5,0,3,0,1,1.917,SQLQuery > MapRoute,SQLQuery > Calendar > MapRoute
+baseline,2,deep-03,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.879786,21,11,24,11,21,4,0,1,4,0,3,0,1,2.131,Calendar > Translator,Translator > OCR > Calendar
+baseline,2,deep-04,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.884877,21,11,24,11,21,4,0,1,4,0,3,0,1,1.918,MapRoute > OCR,OCR > Calculator > MapRoute
+baseline,2,deep-05,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.915955,21,11,24,11,21,4,0,1,4,0,3,0,1,3.155,MapRoute > Calendar,Calendar > MapRoute > OCR
+baseline,3,clean-00,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.849381,13,11,15,11,14,7,0,0,7,0,2,0,1,1.67,SQLQuery > Calculator,Calculator > SQLQuery
+baseline,3,clean-01,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.929991,13,11,15,11,14,7,0,0,7,0,2,0,1,1.655,SQLQuery > WebSearch,WebSearch > SQLQuery
+baseline,3,clean-02,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.921911,13,13,15,13,14,9,0,0,9,0,2,0,1,1.869,WebSearch > Calendar,WebSearch > Calendar
+baseline,3,clean-03,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.889255,13,11,15,11,14,7,0,0,7,0,2,0,1,1.639,OCR > Calculator,Calculator > OCR
+baseline,3,clean-04,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.888091,13,11,15,11,14,7,0,0,7,0,2,0,1,2.975,MapRoute > ImageCaption,MapRoute > ImageCaption
+baseline,3,clean-05,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.834137,13,11,15,11,14,7,0,0,7,0,2,0,1,1.691,Calendar > WebSearch,Calendar > WebSearch
+baseline,3,trap-00,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.904435,13,13,15,13,14,9,0,0,9,0,2,0,1,1.888,OCR > SQLQuery,OCR > SQLQuery
+baseline,3,trap-01,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.479,OCR > MapRoute > WeatherLookup,OCR > MapRoute
+baseline,3,trap-02,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.864114,16,14,20,14,17,10,0,0,10,0,4,0,1,2.157,WeatherLookup > Calculator,WeatherLookup > Calculator
+baseline,3,trap-03,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.891496,13,13,15,13,14,9,0,0,9,0,2,0,1,2.952,CurrencyConvert > MapRoute,CurrencyConvert > MapRoute
+baseline,3,trap-04,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.825236,13,13,15,13,14,9,0,0,9,0,2,0,1,1.909,OCR > SQLQuery,OCR > SQLQuery
+baseline,3,trap-05,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.513,WeatherLookup > MapRoute > Calculator,WeatherLookup > MapRoute
+baseline,3,noisy-00,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.842404,16,12,18,12,16,8,0,1,8,0,2,0,1,1.869,Calendar > ImageCaption,Calendar > ImageCaption
+baseline,3,noisy-01,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.858728,16,11,18,11,16,7,0,1,7,0,2,0,1,2.525,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+baseline,3,noisy-02,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.872929,16,11,18,11,14,7,3,0,7,0,2,0,1,2.182,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+baseline,3,noisy-03,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.897036,16,11,18,11,14,7,3,0,7,0,2,0,1,1.748,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+baseline,3,noisy-04,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.78566,16,11,18,11,16,7,0,1,7,0,2,0,1,1.738,ImageCaption > Calculator,ImageCaption > Calculator
+baseline,3,noisy-05,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.835484,16,11,18,11,16,7,0,1,7,0,2,0,1,1.739,SQLQuery > ImageCaption,SQLQuery > ImageCaption
+baseline,3,deep-00,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.889368,21,11,24,11,21,3,0,1,3,0,3,0,1,3.925,Calculator > SQLQuery,Calculator > SQLQuery > WebSearch
+baseline,3,deep-01,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.946183,21,11,24,11,21,4,0,1,4,0,3,0,1,1.948,Calendar > WebSearch,WebSearch > SQLQuery > Calendar
+baseline,3,deep-02,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.834425,21,11,24,11,21,3,0,1,3,0,3,0,1,1.914,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+baseline,3,deep-03,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.921921,21,11,24,11,21,5,0,1,5,0,3,0,1,1.916,OCR > Translator,Translator > OCR > Calendar
+baseline,3,deep-04,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.92218,21,11,24,11,21,5,0,1,5,0,3,0,1,1.919,MapRoute > OCR,OCR > Calculator > MapRoute
+baseline,3,deep-05,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.867258,21,11,24,11,21,4,0,1,4,0,3,0,1,3.211,Calendar > MapRoute,Calendar > MapRoute > OCR
+baseline,4,clean-00,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.888911,13,11,15,11,14,7,0,0,7,0,2,0,1,1.71,Calculator > SQLQuery,Calculator > SQLQuery
+baseline,4,clean-01,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.93201,13,11,15,11,14,7,0,0,7,0,2,0,1,1.679,SQLQuery > WebSearch,WebSearch > SQLQuery
+baseline,4,clean-02,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.864363,13,11,15,11,14,7,0,0,7,0,2,0,1,1.75,WebSearch > Calendar,WebSearch > Calendar
+baseline,4,clean-03,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.880994,13,11,15,11,14,7,0,0,7,0,2,0,1,1.685,OCR > Calculator,Calculator > OCR
+baseline,4,clean-04,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.922143,13,11,15,11,14,7,0,0,7,0,2,0,1,2.516,ImageCaption > MapRoute,MapRoute > ImageCaption
+baseline,4,clean-05,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.847018,16,14,20,14,17,10,0,0,10,0,4,0,1,2.22,Calendar > WebSearch,Calendar > WebSearch
+baseline,4,trap-00,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.452,OCR > SQLQuery > Calendar,OCR > SQLQuery
+baseline,4,trap-01,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,16,13,20,13,17,10,0,0,10,0,4,0,1,2.09,OCR > MapRoute > WeatherLookup,OCR > MapRoute
+baseline,4,trap-02,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.897883,13,12,15,12,14,9,0,0,9,0,2,0,1,1.827,Calculator > WeatherLookup,WeatherLookup > Calculator
+baseline,4,trap-03,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.927651,16,14,20,14,17,10,0,0,10,0,4,0,1,2.933,MapRoute > CurrencyConvert,CurrencyConvert > MapRoute
+baseline,4,trap-04,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.855812,17,15,20,15,18,8,0,0,8,0,3,0,1,2.297,OCR > SQLQuery,OCR > SQLQuery
+baseline,4,trap-05,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.940012,16,14,20,14,17,10,0,0,10,0,4,0,1,2.18,MapRoute > WeatherLookup,WeatherLookup > MapRoute
+baseline,4,noisy-00,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.899408,16,11,18,11,16,7,0,1,7,0,2,0,1,1.749,ImageCaption > Calendar,Calendar > ImageCaption
+baseline,4,noisy-01,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.862291,16,11,18,11,16,7,0,1,7,0,2,0,1,2.606,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+baseline,4,noisy-02,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.936994,20,11,24,11,13,7,8,0,7,0,4,0,1,1.931,SQLQuery > WeatherLookup,WeatherLookup > SQLQuery
+baseline,4,noisy-03,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.874245,16,11,18,11,16,7,0,1,7,0,2,0,1,1.75,SQLQuery > CurrencyConvert,SQLQuery > CurrencyConvert
+baseline,4,noisy-04,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.852829,16,11,18,11,16,7,0,1,7,0,2,0,1,1.74,ImageCaption > Calculator,ImageCaption > Calculator
+baseline,4,noisy-05,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.918862,16,11,18,11,14,7,3,0,7,0,2,0,1,1.733,ImageCaption > SQLQuery,SQLQuery > ImageCaption
+baseline,4,deep-00,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.828981,21,11,24,11,21,3,0,1,3,0,3,0,1,2.988,Calculator > WebSearch,Calculator > SQLQuery > WebSearch
+baseline,4,deep-01,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.813453,21,15,24,15,21,8,0,1,8,0,3,0,1,2.434,WebSearch > SQLQuery,WebSearch > SQLQuery > Calendar
+baseline,4,deep-02,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.877282,21,11,24,11,21,5,0,1,5,0,3,0,1,1.916,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+baseline,4,deep-03,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.864588,21,11,24,11,21,3,0,1,3,0,3,0,1,1.909,Translator > OCR,Translator > OCR > Calendar
+baseline,4,deep-04,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.819218,21,11,24,11,21,2,0,1,2,0,3,0,1,1.913,OCR > Calculator,OCR > Calculator > MapRoute
+baseline,4,deep-05,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.819457,21,11,24,11,21,5,0,1,5,0,3,0,1,2.838,Calendar > MapRoute,Calendar > MapRoute > OCR
+baseline,5,clean-00,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.900281,13,11,15,11,14,7,0,0,7,0,2,0,1,1.668,SQLQuery > Calculator,Calculator > SQLQuery
+baseline,5,clean-01,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.86964,13,11,15,11,14,7,0,0,7,0,2,0,1,1.646,WebSearch > SQLQuery,WebSearch > SQLQuery
+baseline,5,clean-02,clean,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.93132,13,11,15,11,14,7,0,0,7,0,2,0,1,1.656,Calendar > WebSearch,WebSearch > Calendar
+baseline,5,clean-03,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.889886,13,13,15,13,14,9,0,0,9,0,2,0,1,1.883,Calculator > OCR,Calculator > OCR
+baseline,5,clean-04,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.806887,13,12,15,12,14,8,0,0,8,0,2,0,1,2.142,MapRoute > ImageCaption,MapRoute > ImageCaption
+baseline,5,clean-05,clean,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.780367,13,11,15,11,14,7,0,0,7,0,2,0,1,1.697,Calendar > WebSearch,Calendar > WebSearch
+baseline,5,trap-00,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.869698,16,14,20,14,17,10,0,0,10,0,4,0,1,2.199,SQLQuery > OCR,OCR > SQLQuery
+baseline,5,trap-01,trap,0.3,0.4,10,0.0,0.0,0.8,0.8,1.0,3,0.0,19,15,25,15,20,11,0,0,11,0,6,0,1,2.508,OCR > MapRoute > WeatherLookup,OCR > MapRoute
+baseline,5,trap-02,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.946426,16,14,20,14,17,10,0,0,10,0,4,0,1,2.206,Calculator > WeatherLookup,WeatherLookup > Calculator
+baseline,5,trap-03,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.866407,13,11,15,11,14,7,0,0,7,0,2,0,1,2.072,CurrencyConvert > MapRoute,CurrencyConvert > MapRoute
+baseline,5,trap-04,trap,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.810182,13,11,15,11,14,7,0,0,7,0,2,0,1,1.653,OCR > SQLQuery,OCR > SQLQuery
+baseline,5,trap-05,trap,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.933411,16,14,20,14,17,10,0,0,10,0,4,0,1,2.223,MapRoute > WeatherLookup,WeatherLookup > MapRoute
+baseline,5,noisy-00,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.894248,16,11,18,11,16,7,0,1,7,0,2,0,1,1.727,ImageCaption > Calendar,Calendar > ImageCaption
+baseline,5,noisy-01,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.862319,16,11,18,11,14,7,3,0,7,0,2,0,1,1.699,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+baseline,5,noisy-02,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.848119,16,11,18,11,16,7,0,1,7,0,2,0,1,2.075,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+baseline,5,noisy-03,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.862396,16,12,18,12,14,8,3,0,8,0,2,0,1,1.886,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+baseline,5,noisy-04,noisy,0.3,0.4,10,1.0,1.0,1.0,1.0,1.0,2,0.823433,16,11,18,11,16,7,0,1,7,0,2,0,1,1.735,ImageCaption > Calculator,ImageCaption > Calculator
+baseline,5,noisy-05,noisy,0.3,0.4,10,1.0,0.0,1.0,1.0,1.0,2,0.897791,16,11,18,11,16,7,0,1,7,0,2,0,1,1.776,ImageCaption > SQLQuery,SQLQuery > ImageCaption
+baseline,5,deep-00,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.839139,21,11,24,11,21,5,0,1,5,0,3,0,1,1.934,Calculator > SQLQuery,Calculator > SQLQuery > WebSearch
+baseline,5,deep-01,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.902304,21,11,24,11,21,5,0,1,5,0,3,0,1,2.393,SQLQuery > WebSearch,WebSearch > SQLQuery > Calendar
+baseline,5,deep-02,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.857569,21,11,24,11,21,5,0,1,5,0,3,0,1,1.94,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+baseline,5,deep-03,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.878275,21,11,24,11,21,4,0,1,4,0,3,0,1,1.914,Calendar > Translator,Translator > OCR > Calendar
+baseline,5,deep-04,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.882427,21,14,24,14,21,6,0,1,6,0,3,0,1,2.292,Calculator > OCR,OCR > Calculator > MapRoute
+baseline,5,deep-05,deep,0.3,0.4,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.878414,21,14,24,14,21,6,0,1,6,0,3,0,1,2.324,MapRoute > Calendar,Calendar > MapRoute > OCR
+ablation_no_post_pruning,1,clean-00,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.911222,13,11,15,11,14,0,0,0,0,0,2,0,1,1.86,SQLQuery > Calculator,Calculator > SQLQuery
+ablation_no_post_pruning,1,clean-01,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.864201,13,11,15,11,14,0,0,0,0,0,2,0,1,1.729,WebSearch > SQLQuery,WebSearch > SQLQuery
+ablation_no_post_pruning,1,clean-02,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.834441,13,11,15,11,14,0,0,0,0,0,2,0,1,1.725,WebSearch > Calendar,WebSearch > Calendar
+ablation_no_post_pruning,1,clean-03,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.888915,17,12,20,12,18,0,0,0,0,0,3,0,1,1.991,Calculator > OCR,Calculator > OCR
+ablation_no_post_pruning,1,clean-04,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.891547,13,11,15,11,14,0,0,0,0,0,2,0,1,1.745,MapRoute > ImageCaption,MapRoute > ImageCaption
+ablation_no_post_pruning,1,clean-05,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.90149,13,11,15,11,14,0,0,0,0,0,2,0,1,2.713,WebSearch > Calendar,Calendar > WebSearch
+ablation_no_post_pruning,1,trap-00,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.842497,17,15,20,15,18,0,0,0,0,0,3,0,1,2.376,OCR > SQLQuery,OCR > SQLQuery
+ablation_no_post_pruning,1,trap-01,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.904523,21,13,25,13,22,0,0,0,0,0,4,0,1,2.229,CurrencyConvert > OCR,OCR > MapRoute
+ablation_no_post_pruning,1,trap-02,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.873908,17,11,20,11,18,0,0,0,0,0,3,0,1,1.845,Calculator > WeatherLookup,WeatherLookup > Calculator
+ablation_no_post_pruning,1,trap-03,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.373102,17,13,20,13,18,0,0,0,0,0,3,0,1,2.068,MapRoute > WebSearch,CurrencyConvert > MapRoute
+ablation_no_post_pruning,1,trap-04,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.866572,17,11,20,11,18,0,0,0,0,0,3,0,1,3.142,SQLQuery > OCR,OCR > SQLQuery
+ablation_no_post_pruning,1,trap-05,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.87084,17,13,20,13,18,0,0,0,0,0,3,0,1,2.079,Translator > WeatherLookup,WeatherLookup > MapRoute
+ablation_no_post_pruning,1,noisy-00,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.87454,16,11,18,11,16,0,0,1,0,0,2,0,1,1.788,Calendar > ImageCaption,Calendar > ImageCaption
+ablation_no_post_pruning,1,noisy-01,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.856836,16,11,18,11,16,0,0,1,0,0,2,0,1,1.784,Calculator > CurrencyConvert,CurrencyConvert > Calculator
+ablation_no_post_pruning,1,noisy-02,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.863023,16,11,18,11,16,0,0,1,0,0,2,0,1,2.499,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+ablation_no_post_pruning,1,noisy-03,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.911433,16,11,18,11,16,0,0,1,0,0,2,0,1,2.925,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+ablation_no_post_pruning,1,noisy-04,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.872236,16,11,18,11,16,0,0,1,0,0,2,0,1,2.455,ImageCaption > Calculator,ImageCaption > Calculator
+ablation_no_post_pruning,1,noisy-05,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.847833,16,12,18,12,16,0,0,1,0,0,2,0,1,1.887,SQLQuery > ImageCaption,SQLQuery > ImageCaption
+ablation_no_post_pruning,1,deep-00,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.915081,21,11,24,11,21,0,0,1,0,0,3,0,1,2.27,SQLQuery > Calculator,Calculator > SQLQuery > WebSearch
+ablation_no_post_pruning,1,deep-01,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.857066,21,11,24,11,21,0,0,1,0,0,3,0,1,2.33,WebSearch > Calendar,WebSearch > SQLQuery > Calendar
+ablation_no_post_pruning,1,deep-02,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.867687,21,11,24,11,21,0,0,1,0,0,3,0,1,1.932,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+ablation_no_post_pruning,1,deep-03,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.843354,21,11,24,11,21,0,0,1,0,0,3,0,1,1.928,Translator > OCR,Translator > OCR > Calendar
+ablation_no_post_pruning,1,deep-04,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.872877,21,11,24,11,21,0,0,1,0,0,3,0,1,1.953,OCR > Calculator,OCR > Calculator > MapRoute
+ablation_no_post_pruning,1,deep-05,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.903868,21,11,24,11,21,0,0,1,0,0,3,0,1,2.575,Calendar > MapRoute,Calendar > MapRoute > OCR
+ablation_no_post_pruning,2,clean-00,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.895453,13,11,15,11,14,0,0,0,0,0,2,0,1,1.794,SQLQuery > Calculator,Calculator > SQLQuery
+ablation_no_post_pruning,2,clean-01,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.936052,13,11,15,11,14,0,0,0,0,0,2,0,1,1.72,SQLQuery > WebSearch,WebSearch > SQLQuery
+ablation_no_post_pruning,2,clean-02,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.917167,17,11,20,11,18,0,0,0,0,0,3,0,1,1.842,Calendar > WebSearch,WebSearch > Calendar
+ablation_no_post_pruning,2,clean-03,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.957417,13,11,15,11,14,0,0,0,0,0,2,0,1,1.694,OCR > Calculator,Calculator > OCR
+ablation_no_post_pruning,2,clean-04,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.88315,13,11,15,11,14,0,0,0,0,0,2,0,1,2.277,ImageCaption > MapRoute,MapRoute > ImageCaption
+ablation_no_post_pruning,2,clean-05,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.883273,17,13,20,13,18,0,0,0,0,0,3,0,1,2.286,Calendar > WebSearch,Calendar > WebSearch
+ablation_no_post_pruning,2,trap-00,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.920064,17,14,20,14,18,0,0,0,0,0,3,0,1,2.214,Calculator > OCR,OCR > SQLQuery
+ablation_no_post_pruning,2,trap-01,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.872254,17,13,20,13,18,0,0,0,0,0,3,0,1,2.11,CurrencyConvert > OCR,OCR > MapRoute
+ablation_no_post_pruning,2,trap-02,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.869177,21,15,25,15,22,0,0,0,0,0,4,0,1,2.463,MapRoute > WeatherLookup,WeatherLookup > Calculator
+ablation_no_post_pruning,2,trap-03,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.907855,17,12,20,12,18,0,0,0,0,0,3,0,1,4.066,CurrencyConvert > MapRoute,CurrencyConvert > MapRoute
+ablation_no_post_pruning,2,trap-04,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.811514,17,15,20,15,18,0,0,0,0,0,3,0,1,2.307,OCR > SQLQuery,OCR > SQLQuery
+ablation_no_post_pruning,2,trap-05,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.313834,17,12,20,12,18,0,0,0,0,0,3,0,1,2.16,WeatherLookup > Translator,WeatherLookup > MapRoute
+ablation_no_post_pruning,2,noisy-00,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.834638,16,12,18,12,16,0,0,1,0,0,2,0,1,1.885,Calendar > ImageCaption,Calendar > ImageCaption
+ablation_no_post_pruning,2,noisy-01,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.916287,16,11,18,11,16,0,0,1,0,0,2,0,1,2.147,Calculator > CurrencyConvert,CurrencyConvert > Calculator
+ablation_no_post_pruning,2,noisy-02,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.842819,16,11,18,11,14,0,3,0,0,0,2,0,1,1.924,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+ablation_no_post_pruning,2,noisy-03,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.880735,16,11,18,11,16,0,0,1,0,0,2,0,1,1.841,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+ablation_no_post_pruning,2,noisy-04,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.895182,16,15,18,15,16,0,0,1,0,0,2,0,1,2.304,Calculator > ImageCaption,ImageCaption > Calculator
+ablation_no_post_pruning,2,noisy-05,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.932809,16,11,18,11,16,0,0,1,0,0,2,0,1,1.994,ImageCaption > SQLQuery,SQLQuery > ImageCaption
+ablation_no_post_pruning,2,deep-00,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.901741,26,14,30,14,26,0,0,1,0,0,4,0,1,3.49,WebSearch > Calculator,Calculator > SQLQuery > WebSearch
+ablation_no_post_pruning,2,deep-01,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.882327,21,11,24,11,21,0,0,1,0,0,3,0,1,2.004,WebSearch > SQLQuery,WebSearch > SQLQuery > Calendar
+ablation_no_post_pruning,2,deep-02,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.932082,21,11,24,11,21,0,0,1,0,0,3,0,1,1.956,MapRoute > SQLQuery,SQLQuery > Calendar > MapRoute
+ablation_no_post_pruning,2,deep-03,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.879786,21,11,24,11,21,0,0,1,0,0,3,0,1,2.15,OCR > Translator,Translator > OCR > Calendar
+ablation_no_post_pruning,2,deep-04,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.864174,21,11,24,11,21,0,0,1,0,0,3,0,1,1.959,OCR > Calculator,OCR > Calculator > MapRoute
+ablation_no_post_pruning,2,deep-05,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.915955,21,11,24,11,21,0,0,1,0,0,3,0,1,2.778,MapRoute > Calendar,Calendar > MapRoute > OCR
+ablation_no_post_pruning,3,clean-00,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.849381,13,11,15,11,14,0,0,0,0,0,2,0,1,1.742,SQLQuery > Calculator,Calculator > SQLQuery
+ablation_no_post_pruning,3,clean-01,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.866645,13,11,15,11,14,0,0,0,0,0,2,0,1,1.736,WebSearch > SQLQuery,WebSearch > SQLQuery
+ablation_no_post_pruning,3,clean-02,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.921911,17,13,20,13,18,0,0,0,0,0,3,0,1,2.133,WebSearch > Calendar,WebSearch > Calendar
+ablation_no_post_pruning,3,clean-03,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.874437,13,11,15,11,14,0,0,0,0,0,2,0,1,1.73,Calculator > OCR,Calculator > OCR
+ablation_no_post_pruning,3,clean-04,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.888091,13,11,15,11,14,0,0,0,0,0,2,0,1,2.201,MapRoute > ImageCaption,MapRoute > ImageCaption
+ablation_no_post_pruning,3,clean-05,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.962997,13,11,15,11,14,0,0,0,0,0,2,0,1,1.743,WebSearch > Calendar,Calendar > WebSearch
+ablation_no_post_pruning,3,trap-00,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.89764,17,13,20,13,18,0,0,0,0,0,3,0,1,2.102,SQLQuery > OCR,OCR > SQLQuery
+ablation_no_post_pruning,3,trap-01,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.861193,17,12,20,12,18,0,0,0,0,0,3,0,1,1.937,OCR > MapRoute,OCR > MapRoute
+ablation_no_post_pruning,3,trap-02,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.873178,21,12,25,12,22,0,0,0,0,0,4,0,1,2.067,Calculator > WeatherLookup,WeatherLookup > Calculator
+ablation_no_post_pruning,3,trap-03,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.891496,17,14,20,14,18,0,0,0,0,0,3,0,1,4.165,CurrencyConvert > MapRoute,CurrencyConvert > MapRoute
+ablation_no_post_pruning,3,trap-04,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.825236,17,14,20,14,18,0,0,0,0,0,3,0,1,2.239,OCR > SQLQuery,OCR > SQLQuery
+ablation_no_post_pruning,3,trap-05,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.851323,21,15,25,15,22,0,0,0,0,0,4,0,1,2.457,MapRoute > WeatherLookup,WeatherLookup > MapRoute
+ablation_no_post_pruning,3,noisy-00,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.842404,16,12,18,12,16,0,0,1,0,0,2,0,1,1.894,Calendar > ImageCaption,Calendar > ImageCaption
+ablation_no_post_pruning,3,noisy-01,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.900774,16,11,18,11,16,0,0,1,0,0,2,0,1,2.81,Calculator > CurrencyConvert,CurrencyConvert > Calculator
+ablation_no_post_pruning,3,noisy-02,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.872929,16,11,18,11,14,0,3,0,0,0,2,0,1,1.821,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+ablation_no_post_pruning,3,noisy-03,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.862012,16,11,18,11,14,0,3,0,0,0,2,0,1,1.829,SQLQuery > CurrencyConvert,SQLQuery > CurrencyConvert
+ablation_no_post_pruning,3,noisy-04,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.78566,16,11,18,11,16,0,0,1,0,0,2,0,1,1.85,ImageCaption > Calculator,ImageCaption > Calculator
+ablation_no_post_pruning,3,noisy-05,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.835484,16,11,18,11,16,0,0,1,0,0,2,0,1,1.869,SQLQuery > ImageCaption,SQLQuery > ImageCaption
+ablation_no_post_pruning,3,deep-00,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.918564,21,11,24,11,21,0,0,1,0,0,3,0,1,2.67,WebSearch > Calculator,Calculator > SQLQuery > WebSearch
+ablation_no_post_pruning,3,deep-01,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.946183,21,11,24,11,21,0,0,1,0,0,3,0,1,2.0,SQLQuery > WebSearch,WebSearch > SQLQuery > Calendar
+ablation_no_post_pruning,3,deep-02,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.834425,21,11,24,11,21,0,0,1,0,0,3,0,1,1.9,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+ablation_no_post_pruning,3,deep-03,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.921921,21,11,24,11,21,0,0,1,0,0,3,0,1,1.939,OCR > Translator,Translator > OCR > Calendar
+ablation_no_post_pruning,3,deep-04,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.836065,21,11,24,11,21,0,0,1,0,0,3,0,1,1.939,OCR > Calculator,OCR > Calculator > MapRoute
+ablation_no_post_pruning,3,deep-05,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.867258,21,11,24,11,21,0,0,1,0,0,3,0,1,3.365,Calendar > MapRoute,Calendar > MapRoute > OCR
+ablation_no_post_pruning,4,clean-00,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.890389,13,11,15,11,14,0,0,0,0,0,2,0,1,1.718,SQLQuery > Calculator,Calculator > SQLQuery
+ablation_no_post_pruning,4,clean-01,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.93201,13,11,15,11,14,0,0,0,0,0,2,0,1,1.685,SQLQuery > WebSearch,WebSearch > SQLQuery
+ablation_no_post_pruning,4,clean-02,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.937726,17,11,20,11,18,0,0,0,0,0,3,0,1,1.826,Calendar > WebSearch,WebSearch > Calendar
+ablation_no_post_pruning,4,clean-03,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.859743,13,11,15,11,14,0,0,0,0,0,2,0,1,1.683,Calculator > OCR,Calculator > OCR
+ablation_no_post_pruning,4,clean-04,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.791942,13,11,15,11,14,0,0,0,0,0,2,0,1,2.851,MapRoute > ImageCaption,MapRoute > ImageCaption
+ablation_no_post_pruning,4,clean-05,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.905403,17,15,20,15,18,0,0,0,0,0,3,0,1,2.37,WebSearch > Calendar,Calendar > WebSearch
+ablation_no_post_pruning,4,trap-00,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.809927,21,15,25,15,22,0,0,0,0,0,4,0,1,2.48,OCR > SQLQuery,OCR > SQLQuery
+ablation_no_post_pruning,4,trap-01,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.853987,17,12,20,12,18,0,0,0,0,0,3,0,1,1.984,OCR > MapRoute,OCR > MapRoute
+ablation_no_post_pruning,4,trap-02,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.897883,21,13,25,13,22,0,0,0,0,0,4,0,1,2.65,Calculator > WeatherLookup,WeatherLookup > Calculator
+ablation_no_post_pruning,4,trap-03,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.927651,17,12,20,12,18,0,0,0,0,0,3,0,1,2.498,WebSearch > CurrencyConvert,CurrencyConvert > MapRoute
+ablation_no_post_pruning,4,trap-04,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.894633,17,15,20,15,18,0,0,0,0,0,3,0,1,2.446,MapRoute > OCR,OCR > SQLQuery
+ablation_no_post_pruning,4,trap-05,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.940012,17,13,20,13,18,0,0,0,0,0,3,0,1,2.122,MapRoute > WeatherLookup,WeatherLookup > MapRoute
+ablation_no_post_pruning,4,noisy-00,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.86654,16,11,18,11,16,0,0,1,0,0,2,0,1,2.036,Calendar > ImageCaption,Calendar > ImageCaption
+ablation_no_post_pruning,4,noisy-01,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.874872,16,11,18,11,16,0,0,1,0,0,2,0,1,3.266,Calculator > CurrencyConvert,CurrencyConvert > Calculator
+ablation_no_post_pruning,4,noisy-02,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.936994,20,11,24,11,13,0,8,0,0,0,4,0,1,2.523,SQLQuery > WeatherLookup,WeatherLookup > SQLQuery
+ablation_no_post_pruning,4,noisy-03,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.874245,16,11,18,11,16,0,0,1,0,0,2,0,1,1.887,SQLQuery > CurrencyConvert,SQLQuery > CurrencyConvert
+ablation_no_post_pruning,4,noisy-04,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.921847,16,11,18,11,16,0,0,1,0,0,2,0,1,1.894,Calculator > ImageCaption,ImageCaption > Calculator
+ablation_no_post_pruning,4,noisy-05,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.838208,16,11,18,11,14,0,3,0,0,0,2,0,1,4.324,SQLQuery > ImageCaption,SQLQuery > ImageCaption
+ablation_no_post_pruning,4,deep-00,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.828981,21,11,24,11,21,0,0,1,0,0,3,0,1,3.17,Calculator > WebSearch,Calculator > SQLQuery > WebSearch
+ablation_no_post_pruning,4,deep-01,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.958538,21,14,24,14,21,0,0,1,0,0,3,0,1,3.721,SQLQuery > WebSearch,WebSearch > SQLQuery > Calendar
+ablation_no_post_pruning,4,deep-02,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.878971,21,11,24,11,21,0,0,1,0,0,3,0,1,3.559,Calendar > SQLQuery,SQLQuery > Calendar > MapRoute
+ablation_no_post_pruning,4,deep-03,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.886225,21,11,24,11,21,0,0,1,0,0,3,0,1,2.09,OCR > Translator,Translator > OCR > Calendar
+ablation_no_post_pruning,4,deep-04,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.819218,21,11,24,11,21,0,0,1,0,0,3,0,1,2.323,OCR > Calculator,OCR > Calculator > MapRoute
+ablation_no_post_pruning,4,deep-05,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.8833,21,11,24,11,21,0,0,1,0,0,3,0,1,1.984,MapRoute > Calendar,Calendar > MapRoute > OCR
+ablation_no_post_pruning,5,clean-00,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.861831,13,11,15,11,14,0,0,0,0,0,2,0,1,2.523,Calculator > SQLQuery,Calculator > SQLQuery
+ablation_no_post_pruning,5,clean-01,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.958141,13,11,15,11,14,0,0,0,0,0,2,0,1,1.755,SQLQuery > WebSearch,WebSearch > SQLQuery
+ablation_no_post_pruning,5,clean-02,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.93132,17,11,20,11,18,0,0,0,0,0,3,0,1,1.847,Calendar > WebSearch,WebSearch > Calendar
+ablation_no_post_pruning,5,clean-03,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.889886,13,13,15,13,14,0,0,0,0,0,2,0,1,1.967,Calculator > OCR,Calculator > OCR
+ablation_no_post_pruning,5,clean-04,clean,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.929062,17,12,20,12,18,0,0,0,0,0,3,0,1,1.989,ImageCaption > MapRoute,MapRoute > ImageCaption
+ablation_no_post_pruning,5,clean-05,clean,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.780367,13,11,15,11,14,0,0,0,0,0,2,0,1,2.557,Calendar > WebSearch,Calendar > WebSearch
+ablation_no_post_pruning,5,trap-00,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.869698,17,12,20,12,18,0,0,0,0,0,3,0,1,2.011,SQLQuery > OCR,OCR > SQLQuery
+ablation_no_post_pruning,5,trap-01,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.958669,21,13,25,13,22,0,0,0,0,0,4,0,1,2.261,CurrencyConvert > OCR,OCR > MapRoute
+ablation_no_post_pruning,5,trap-02,trap,0.3,0.0,10,0.0,0.0,0.5,0.5,0.5,2,0.946426,17,12,20,12,18,0,0,0,0,0,3,0,1,1.993,MapRoute > WeatherLookup,WeatherLookup > Calculator
+ablation_no_post_pruning,5,trap-03,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.957021,17,11,20,11,18,0,0,0,0,0,3,0,1,1.846,MapRoute > CurrencyConvert,CurrencyConvert > MapRoute
+ablation_no_post_pruning,5,trap-04,trap,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.900332,17,11,20,11,18,0,0,0,0,0,3,0,1,2.358,SQLQuery > OCR,OCR > SQLQuery
+ablation_no_post_pruning,5,trap-05,trap,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.846545,21,15,25,15,22,0,0,0,0,0,4,0,1,2.502,WeatherLookup > MapRoute,WeatherLookup > MapRoute
+ablation_no_post_pruning,5,noisy-00,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.891968,16,11,18,11,16,0,0,1,0,0,2,0,1,1.811,Calendar > ImageCaption,Calendar > ImageCaption
+ablation_no_post_pruning,5,noisy-01,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.862319,16,11,18,11,14,0,3,0,0,0,2,0,1,1.795,CurrencyConvert > Calculator,CurrencyConvert > Calculator
+ablation_no_post_pruning,5,noisy-02,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.848119,16,11,18,11,16,0,0,1,0,0,2,0,1,1.875,WeatherLookup > SQLQuery,WeatherLookup > SQLQuery
+ablation_no_post_pruning,5,noisy-03,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.862396,16,12,18,12,14,0,3,0,0,0,2,0,1,2.26,CurrencyConvert > SQLQuery,SQLQuery > CurrencyConvert
+ablation_no_post_pruning,5,noisy-04,noisy,0.3,0.0,10,1.0,1.0,1.0,1.0,1.0,2,0.823433,16,11,18,11,16,0,0,1,0,0,2,0,1,1.833,ImageCaption > Calculator,ImageCaption > Calculator
+ablation_no_post_pruning,5,noisy-05,noisy,0.3,0.0,10,1.0,0.0,1.0,1.0,1.0,2,0.897791,16,11,18,11,16,0,0,1,0,0,2,0,1,1.794,ImageCaption > SQLQuery,SQLQuery > ImageCaption
+ablation_no_post_pruning,5,deep-00,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.875981,21,11,24,11,21,0,0,1,0,0,3,0,1,1.979,WebSearch > Calculator,Calculator > SQLQuery > WebSearch
+ablation_no_post_pruning,5,deep-01,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.902304,21,11,24,11,21,0,0,1,0,0,3,0,1,1.957,SQLQuery > WebSearch,WebSearch > SQLQuery > Calendar
+ablation_no_post_pruning,5,deep-02,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.857569,21,11,24,11,21,0,0,1,0,0,3,0,1,2.563,SQLQuery > Calendar,SQLQuery > Calendar > MapRoute
+ablation_no_post_pruning,5,deep-03,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.878275,21,11,24,11,21,0,0,1,0,0,3,0,1,1.963,OCR > Translator,Translator > OCR > Calendar
+ablation_no_post_pruning,5,deep-04,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.90123,21,14,24,14,21,0,0,1,0,0,3,0,1,2.414,OCR > Calculator,OCR > Calculator > MapRoute
+ablation_no_post_pruning,5,deep-05,deep,0.3,0.0,10,0.0,0.0,0.8,0.8,0.6666666666666666,2,0.88243,21,15,24,15,21,0,0,1,0,0,3,0,1,2.512,OCR > MapRoute,Calendar > MapRoute > OCR

@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-11-12T15:19:21+00:00",
+  "command": "C:\\Users\\JJW\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m repro.run_experiment --seeds 5 --per-family 6 --early-stop-patience 10 --out repro/results/sensitivity_defaultstop",
+  "python": "3.13.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "upstream_head": "fed7a608ca54ba2e75078f9a1f409c9aa7fab18f",
+  "upstream_project": "SYang2000/ICLR_2026_ToolTree",
+  "configs": {
+    "baseline": "repro\\configs\\baseline.yaml",
+    "ablation_no_post_pruning": "repro\\configs\\ablation_no_post_pruning.yaml"
+  },
+  "n_tasks": 24,
+  "task_families": [
+    "clean",
+    "deep",
+    "noisy",
+    "trap"
+  ],
+  "n_seeds": 5,
+  "n_conditions": 2,
+  "n_runs": 240,
+  "jitter_sigma": 0.03,
+  "paired_seeds": true,
+  "protocol_override": {
+    "early_stop_patience": 10
+  },
+  "llm_used": false,
+  "llm_note": "Planner/judge replaced by deterministic stubs adapted from the upstream tests/test_tier1_fixes.py. No API key required; no network calls at run time."
+}

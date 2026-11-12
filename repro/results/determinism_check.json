@@ -1,0 +1,10 @@
+{
+  "n_rows_reference": 240,
+  "n_rows_rerun": 240,
+  "ignored_columns": [
+    "wall_ms"
+  ],
+  "differing_cells_by_column": {},
+  "all_logical_measurements_identical": true,
+  "interpretation": "All plan-quality and search-cost measurements are bit-for-bit identical across independent reruns. Only wall-clock time varies, as expected."
+}

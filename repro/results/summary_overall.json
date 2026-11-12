@@ -1,0 +1,698 @@
+{
+  "main": {
+    "seed_means": {
+      "baseline": {
+        "1": {
+          "plan_success": 0.9583333333333334,
+          "tool_f1": 0.9861111111111112,
+          "plan_f1": 0.9861111111111112,
+          "gold_recall": 1.0,
+          "plan_length": 2.3333333333333335,
+          "pre_eval_calls": 27.833333333333332,
+          "post_eval_calls": 26.125,
+          "planner_calls": 37.083333333333336,
+          "rollouts_used": 26.125,
+          "nodes_created": 28.333333333333332,
+          "post_pruned_nodes": 18.916666666666668,
+          "wall_ms": 5.03175,
+          "best_q": 0.47619941666666665
+        },
+        "2": {
+          "plan_success": 1.0,
+          "tool_f1": 1.0,
+          "plan_f1": 1.0,
+          "gold_recall": 1.0,
+          "plan_length": 2.25,
+          "pre_eval_calls": 26.75,
+          "post_eval_calls": 25.083333333333332,
+          "planner_calls": 35.0,
+          "rollouts_used": 25.083333333333332,
+          "nodes_created": 27.083333333333332,
+          "post_pruned_nodes": 18.333333333333332,
+          "wall_ms": 4.595458333333333,
+          "best_q": 0.48140575
+        },
+        "3": {
+          "plan_success": 1.0,
+          "tool_f1": 1.0,
+          "plan_f1": 1.0,
+          "gold_recall": 1.0,
+          "plan_length": 2.25,
+          "pre_eval_calls": 26.75,
+          "post_eval_calls": 24.916666666666668,
+          "planner_calls": 35.0,
+          "rollouts_used": 24.916666666666668,
+          "nodes_created": 26.916666666666668,
+          "post_pruned_nodes": 18.166666666666668,
+          "wall_ms": 4.802708333333333,
+          "best_q": 0.4994282916666667
+        },
+        "4": {
+          "plan_success": 0.9583333333333334,
+          "tool_f1": 0.9861111111111112,
+          "plan_f1": 0.9861111111111112,
+          "gold_recall": 1.0,
+          "plan_length": 2.3333333333333335,
+          "pre_eval_calls": 27.833333333333332,
+          "post_eval_calls": 25.583333333333332,
+          "planner_calls": 37.083333333333336,
+          "rollouts_used": 25.583333333333332,
+          "nodes_created": 27.791666666666668,
+          "post_pruned_nodes": 18.375,
+          "wall_ms": 5.288291666666667,
+          "best_q": 0.47135029166666664
+        },
+        "5": {
+          "plan_success": 1.0,
+          "tool_f1": 1.0,
+          "plan_f1": 1.0,
+          "gold_recall": 1.0,
+          "plan_length": 2.25,
+          "pre_eval_calls": 26.75,
+          "post_eval_calls": 24.916666666666668,
+          "planner_calls": 35.0,
+          "rollouts_used": 24.916666666666668,
+          "nodes_created": 26.916666666666668,
+          "post_pruned_nodes": 18.166666666666668,
+          "wall_ms": 4.620583333333333,
+          "best_q": 0.49349916666666666
+        }
+      },
+      "ablation_no_post_pruning": {
+        "1": {
+          "plan_success": 0.16666666666666666,
+          "tool_f1": 0.6333333333333333,
+          "plan_f1": 0.6333333333333333,
+          "gold_recall": 0.6736111111111112,
+          "plan_length": 2.4166666666666665,
+          "pre_eval_calls": 52.541666666666664,
+          "post_eval_calls": 40.0,
+          "planner_calls": 74.54166666666667,
+          "rollouts_used": 40.0,
+          "nodes_created": 53.041666666666664,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 8.381333333333334,
+          "best_q": 0.8896155
+        },
+        "2": {
+          "plan_success": 0.08333333333333333,
+          "tool_f1": 0.5916666666666667,
+          "plan_f1": 0.5916666666666667,
+          "gold_recall": 0.6388888888888888,
+          "plan_length": 2.4166666666666665,
+          "pre_eval_calls": 51.708333333333336,
+          "post_eval_calls": 40.0,
+          "planner_calls": 72.70833333333333,
+          "rollouts_used": 40.0,
+          "nodes_created": 51.583333333333336,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 8.355333333333332,
+          "best_q": 0.8863118333333333
+        },
+        "3": {
+          "plan_success": 0.041666666666666664,
+          "tool_f1": 0.5791666666666667,
+          "plan_f1": 0.5791666666666667,
+          "gold_recall": 0.6319444444444444,
+          "plan_length": 2.4166666666666665,
+          "pre_eval_calls": 53.083333333333336,
+          "post_eval_calls": 40.0,
+          "planner_calls": 74.83333333333333,
+          "rollouts_used": 40.0,
+          "nodes_created": 52.291666666666664,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 8.889958333333334,
+          "best_q": 0.894842375
+        },
+        "4": {
+          "plan_success": 0.20833333333333334,
+          "tool_f1": 0.7041666666666667,
+          "plan_f1": 0.7041666666666667,
+          "gold_recall": 0.7847222222222222,
+          "plan_length": 2.6666666666666665,
+          "pre_eval_calls": 54.25,
+          "post_eval_calls": 40.0,
+          "planner_calls": 76.91666666666667,
+          "rollouts_used": 40.0,
+          "nodes_created": 52.25,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 8.478875,
+          "best_q": 0.8853221666666666
+        },
+        "5": {
+          "plan_success": 0.16666666666666666,
+          "tool_f1": 0.6666666666666667,
+          "plan_f1": 0.6666666666666667,
+          "gold_recall": 0.7361111111111112,
+          "plan_length": 2.5833333333333335,
+          "pre_eval_calls": 53.75,
+          "post_eval_calls": 40.0,
+          "planner_calls": 76.58333333333333,
+          "rollouts_used": 40.0,
+          "nodes_created": 52.958333333333336,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 8.450791666666667,
+          "best_q": 0.88657575
+        }
+      }
+    },
+    "overall": {
+      "baseline": {
+        "plan_success": {
+          "mean": 0.9833333333333334,
+          "sd": 0.02041241452319313,
+          "n_seeds": 5
+        },
+        "tool_f1": {
+          "mean": 0.9944444444444445,
+          "sd": 0.006804138174397693,
+          "n_seeds": 5
+        },
+        "plan_f1": {
+          "mean": 0.9944444444444445,
+          "sd": 0.006804138174397693,
+          "n_seeds": 5
+        },
+        "gold_recall": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "plan_length": {
+          "mean": 2.283333333333333,
+          "sd": 0.040824829046386374,
+          "n_seeds": 5
+        },
+        "pre_eval_calls": {
+          "mean": 27.183333333333334,
+          "sd": 0.5307227776030213,
+          "n_seeds": 5
+        },
+        "post_eval_calls": {
+          "mean": 25.325,
+          "sd": 0.46874537034750735,
+          "n_seeds": 5
+        },
+        "planner_calls": {
+          "mean": 35.833333333333336,
+          "sd": 1.0206207261596587,
+          "n_seeds": 5
+        },
+        "rollouts_used": {
+          "mean": 25.325,
+          "sd": 0.46874537034750735,
+          "n_seeds": 5
+        },
+        "nodes_created": {
+          "mean": 27.408333333333335,
+          "sd": 0.5642103626603581,
+          "n_seeds": 5
+        },
+        "post_pruned_nodes": {
+          "mean": 18.391666666666666,
+          "sd": 0.27588242262078094,
+          "n_seeds": 5
+        },
+        "wall_ms": {
+          "mean": 4.867758333333334,
+          "sd": 0.26199840621864695,
+          "n_seeds": 5
+        },
+        "best_q": {
+          "mean": 0.48437658333333333,
+          "sd": 0.01053709286662414,
+          "n_seeds": 5
+        }
+      },
+      "ablation_no_post_pruning": {
+        "plan_success": {
+          "mean": 0.13333333333333333,
+          "sd": 0.06123724356957946,
+          "n_seeds": 5
+        },
+        "tool_f1": {
+          "mean": 0.635,
+          "sd": 0.046442915976975925,
+          "n_seeds": 5
+        },
+        "plan_f1": {
+          "mean": 0.635,
+          "sd": 0.046442915976975925,
+          "n_seeds": 5
+        },
+        "gold_recall": {
+          "mean": 0.6930555555555555,
+          "sd": 0.058827273845964936,
+          "n_seeds": 5
+        },
+        "plan_length": {
+          "mean": 2.5,
+          "sd": 0.10540925533894603,
+          "n_seeds": 5
+        },
+        "pre_eval_calls": {
+          "mean": 53.06666666666667,
+          "sd": 0.8931063144379219,
+          "n_seeds": 5
+        },
+        "post_eval_calls": {
+          "mean": 40.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "planner_calls": {
+          "mean": 75.11666666666666,
+          "sd": 1.5232913925663307,
+          "n_seeds": 5
+        },
+        "rollouts_used": {
+          "mean": 40.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "nodes_created": {
+          "mean": 52.425,
+          "sd": 0.5332031091015457,
+          "n_seeds": 5
+        },
+        "post_pruned_nodes": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "wall_ms": {
+          "mean": 8.511258333333334,
+          "sd": 0.19458247572973075,
+          "n_seeds": 5
+        },
+        "best_q": {
+          "mean": 0.8885335249999999,
+          "sd": 0.003465656572153552,
+          "n_seeds": 5
+        }
+      }
+    },
+    "deltas": {
+      "plan_success": {
+        "absolute": -0.8500000000000001,
+        "percent": -86.4406779661017
+      },
+      "tool_f1": {
+        "absolute": -0.35944444444444446,
+        "percent": -36.14525139664804
+      },
+      "plan_f1": {
+        "absolute": -0.35944444444444446,
+        "percent": -36.14525139664804
+      },
+      "gold_recall": {
+        "absolute": -0.30694444444444446,
+        "percent": -30.694444444444446
+      },
+      "plan_length": {
+        "absolute": 0.21666666666666679,
+        "percent": 9.489051094890517
+      },
+      "pre_eval_calls": {
+        "absolute": 25.883333333333336,
+        "percent": 95.21765787860208
+      },
+      "post_eval_calls": {
+        "absolute": 14.675,
+        "percent": 57.9466929911155
+      },
+      "planner_calls": {
+        "absolute": 39.283333333333324,
+        "percent": 109.62790697674416
+      },
+      "rollouts_used": {
+        "absolute": 14.675,
+        "percent": 57.9466929911155
+      },
+      "nodes_created": {
+        "absolute": 25.016666666666662,
+        "percent": 91.27394344785647
+      },
+      "post_pruned_nodes": {
+        "absolute": -18.391666666666666,
+        "percent": -100.0
+      },
+      "wall_ms": {
+        "absolute": 3.6435000000000004,
+        "percent": 74.84964845214515
+      },
+      "best_q": {
+        "absolute": 0.4041569416666666,
+        "percent": 83.43857972765335
+      }
+    }
+  },
+  "sensitivity": {
+    "seed_means": {
+      "baseline": {
+        "1": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9333333333333333,
+          "plan_f1": 0.9333333333333333,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0833333333333335,
+          "pre_eval_calls": 16.416666666666668,
+          "post_eval_calls": 11.541666666666666,
+          "planner_calls": 19.041666666666668,
+          "rollouts_used": 11.541666666666666,
+          "nodes_created": 16.916666666666668,
+          "post_pruned_nodes": 6.75,
+          "wall_ms": 1.9930416666666666,
+          "best_q": 0.808533875
+        },
+        "2": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9333333333333333,
+          "plan_f1": 0.9333333333333333,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0833333333333335,
+          "pre_eval_calls": 16.625,
+          "post_eval_calls": 12.166666666666666,
+          "planner_calls": 19.458333333333332,
+          "rollouts_used": 12.166666666666666,
+          "nodes_created": 17.041666666666668,
+          "post_pruned_nodes": 7.458333333333333,
+          "wall_ms": 2.229416666666667,
+          "best_q": 0.8072216666666666
+        },
+        "3": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9333333333333333,
+          "plan_f1": 0.9333333333333333,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0833333333333335,
+          "pre_eval_calls": 16.375,
+          "post_eval_calls": 11.833333333333334,
+          "planner_calls": 19.041666666666668,
+          "rollouts_used": 11.833333333333334,
+          "nodes_created": 16.708333333333332,
+          "post_pruned_nodes": 7.083333333333333,
+          "wall_ms": 2.1679583333333334,
+          "best_q": 0.8029842916666666
+        },
+        "4": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9333333333333333,
+          "plan_f1": 0.9333333333333333,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0833333333333335,
+          "pre_eval_calls": 16.833333333333332,
+          "post_eval_calls": 12.0,
+          "planner_calls": 19.708333333333332,
+          "rollouts_used": 12.0,
+          "nodes_created": 16.958333333333332,
+          "post_pruned_nodes": 7.125,
+          "wall_ms": 2.1185833333333335,
+          "best_q": 0.8051835416666666
+        },
+        "5": {
+          "plan_success": 0.7083333333333334,
+          "tool_f1": 0.9416666666666667,
+          "plan_f1": 0.9416666666666667,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0416666666666665,
+          "pre_eval_calls": 16.375,
+          "post_eval_calls": 11.958333333333334,
+          "planner_calls": 19.041666666666668,
+          "rollouts_used": 11.958333333333334,
+          "nodes_created": 16.708333333333332,
+          "post_pruned_nodes": 7.25,
+          "wall_ms": 1.9686666666666666,
+          "best_q": 0.8346224583333334
+        }
+      },
+      "ablation_no_post_pruning": {
+        "1": {
+          "plan_success": 0.625,
+          "tool_f1": 0.8875,
+          "plan_f1": 0.8875,
+          "gold_recall": 0.8541666666666666,
+          "plan_length": 2.0,
+          "pre_eval_calls": 17.083333333333332,
+          "post_eval_calls": 11.5,
+          "planner_calls": 19.666666666666668,
+          "rollouts_used": 11.5,
+          "nodes_created": 17.583333333333332,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 2.1595,
+          "best_q": 0.8545455
+        },
+        "2": {
+          "plan_success": 0.5833333333333334,
+          "tool_f1": 0.8666666666666667,
+          "plan_f1": 0.8666666666666667,
+          "gold_recall": 0.8333333333333334,
+          "plan_length": 2.0,
+          "pre_eval_calls": 17.458333333333332,
+          "post_eval_calls": 12.041666666666666,
+          "planner_calls": 20.125,
+          "rollouts_used": 12.041666666666666,
+          "nodes_created": 17.875,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 2.2235416666666667,
+          "best_q": 0.8685727083333333
+        },
+        "3": {
+          "plan_success": 0.75,
+          "tool_f1": 0.95,
+          "plan_f1": 0.95,
+          "gold_recall": 0.9166666666666666,
+          "plan_length": 2.0,
+          "pre_eval_calls": 17.25,
+          "post_eval_calls": 11.708333333333334,
+          "planner_calls": 19.875,
+          "rollouts_used": 11.708333333333334,
+          "nodes_created": 17.583333333333332,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 2.172416666666667,
+          "best_q": 0.8744669583333333
+        },
+        "4": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9083333333333333,
+          "plan_f1": 0.9083333333333333,
+          "gold_recall": 0.875,
+          "plan_length": 2.0,
+          "pre_eval_calls": 17.583333333333332,
+          "post_eval_calls": 11.875,
+          "planner_calls": 20.333333333333332,
+          "rollouts_used": 11.875,
+          "nodes_created": 17.708333333333332,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 2.462083333333333,
+          "best_q": 0.8837185416666666
+        },
+        "5": {
+          "plan_success": 0.6666666666666666,
+          "tool_f1": 0.9083333333333333,
+          "plan_f1": 0.9083333333333333,
+          "gold_recall": 0.875,
+          "plan_length": 2.0,
+          "pre_eval_calls": 17.416666666666668,
+          "post_eval_calls": 11.791666666666666,
+          "planner_calls": 20.083333333333332,
+          "rollouts_used": 11.791666666666666,
+          "nodes_created": 17.75,
+          "post_pruned_nodes": 0.0,
+          "wall_ms": 2.0985416666666667,
+          "best_q": 0.888046375
+        }
+      }
+    },
+    "overall": {
+      "baseline": {
+        "plan_success": {
+          "mean": 0.6749999999999999,
+          "sd": 0.016666666666666698,
+          "n_seeds": 5
+        },
+        "tool_f1": {
+          "mean": 0.935,
+          "sd": 0.0033333333333333214,
+          "n_seeds": 5
+        },
+        "plan_f1": {
+          "mean": 0.935,
+          "sd": 0.0033333333333333214,
+          "n_seeds": 5
+        },
+        "gold_recall": {
+          "mean": 0.9166666666666666,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "plan_length": {
+          "mean": 2.075,
+          "sd": 0.016666666666666784,
+          "n_seeds": 5
+        },
+        "pre_eval_calls": {
+          "mean": 16.525,
+          "sd": 0.17989194287435697,
+          "n_seeds": 5
+        },
+        "post_eval_calls": {
+          "mean": 11.9,
+          "sd": 0.20849993338661343,
+          "n_seeds": 5
+        },
+        "planner_calls": {
+          "mean": 19.258333333333333,
+          "sd": 0.27688746209726806,
+          "n_seeds": 5
+        },
+        "rollouts_used": {
+          "mean": 11.9,
+          "sd": 0.20849993338661343,
+          "n_seeds": 5
+        },
+        "nodes_created": {
+          "mean": 16.866666666666667,
+          "sd": 0.1354006400772668,
+          "n_seeds": 5
+        },
+        "post_pruned_nodes": {
+          "mean": 7.133333333333333,
+          "sd": 0.23184046238739253,
+          "n_seeds": 5
+        },
+        "wall_ms": {
+          "mean": 2.0955333333333335,
+          "sd": 0.10030067090171109,
+          "n_seeds": 5
+        },
+        "best_q": {
+          "mean": 0.8117091666666666,
+          "sd": 0.011609877637825412,
+          "n_seeds": 5
+        }
+      },
+      "ablation_no_post_pruning": {
+        "plan_success": {
+          "mean": 0.6583333333333333,
+          "sd": 0.05527707983925665,
+          "n_seeds": 5
+        },
+        "tool_f1": {
+          "mean": 0.9041666666666667,
+          "sd": 0.027638539919628315,
+          "n_seeds": 5
+        },
+        "plan_f1": {
+          "mean": 0.9041666666666667,
+          "sd": 0.027638539919628315,
+          "n_seeds": 5
+        },
+        "gold_recall": {
+          "mean": 0.8708333333333333,
+          "sd": 0.027638539919628315,
+          "n_seeds": 5
+        },
+        "plan_length": {
+          "mean": 2.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "pre_eval_calls": {
+          "mean": 17.358333333333334,
+          "sd": 0.1740051084818425,
+          "n_seeds": 5
+        },
+        "post_eval_calls": {
+          "mean": 11.783333333333333,
+          "sd": 0.17950549357114992,
+          "n_seeds": 5
+        },
+        "planner_calls": {
+          "mean": 20.016666666666666,
+          "sd": 0.22760833806246028,
+          "n_seeds": 5
+        },
+        "rollouts_used": {
+          "mean": 11.783333333333333,
+          "sd": 0.17950549357114992,
+          "n_seeds": 5
+        },
+        "nodes_created": {
+          "mean": 17.7,
+          "sd": 0.10992421631894148,
+          "n_seeds": 5
+        },
+        "post_pruned_nodes": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "n_seeds": 5
+        },
+        "wall_ms": {
+          "mean": 2.2232166666666666,
+          "sd": 0.1258901896936814,
+          "n_seeds": 5
+        },
+        "best_q": {
+          "mean": 0.8738700166666666,
+          "sd": 0.011830615703358641,
+          "n_seeds": 5
+        }
+      }
+    },
+    "deltas": {
+      "plan_success": {
+        "absolute": -0.016666666666666607,
+        "percent": -2.4691358024691272
+      },
+      "tool_f1": {
+        "absolute": -0.03083333333333338,
+        "percent": -3.29768270944742
+      },
+      "plan_f1": {
+        "absolute": -0.03083333333333338,
+        "percent": -3.29768270944742
+      },
+      "gold_recall": {
+        "absolute": -0.04583333333333328,
+        "percent": -4.999999999999995
+      },
+      "plan_length": {
+        "absolute": -0.07500000000000018,
+        "percent": -3.6144578313253093
+      },
+      "pre_eval_calls": {
+        "absolute": 0.8333333333333357,
+        "percent": 5.042864346949082
+      },
+      "post_eval_calls": {
+        "absolute": -0.11666666666666714,
+        "percent": -0.980392156862749
+      },
+      "planner_calls": {
+        "absolute": 0.7583333333333329,
+        "percent": 3.937689311986151
+      },
+      "rollouts_used": {
+        "absolute": -0.11666666666666714,
+        "percent": -0.980392156862749
+      },
+      "nodes_created": {
+        "absolute": 0.8333333333333321,
+        "percent": 4.940711462450586
+      },
+      "post_pruned_nodes": {
+        "absolute": -7.133333333333333,
+        "percent": -100.0
+      },
+      "wall_ms": {
+        "absolute": 0.12768333333333315,
+        "percent": 6.093118696910881
+      },
+      "best_q": {
+        "absolute": 0.062160850000000045,
+        "percent": 7.6580199599405026
+      }
+    }
+  }
+}
